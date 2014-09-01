@@ -29,7 +29,7 @@ This repository contains **Dockerfile** of [Dotdeb](http://http://www.dotdeb.org
 
     docker run -d vandries/php
 
-By default vandries/php:latest install current version of Dotdeb PHP package. Actually PHP 5.4.32.
+vandries/php:latest is shortcut for vandries/php:5.5
 
 
 ### Usage with specific version
@@ -40,7 +40,8 @@ Images with specific version of PHP are now available.
 
 Supported versions :
 
-- 5.3 : Debian sqeezy + PHP 5.3.29
-- 5.4 : Debian wheezy + PHP 5.4.32
+- 5.3 : Debian sqeeze + PHP 5.3.29
+- 5.4-squeeze : Debian sqeeze + PHP 5.4.32
+- 5.4-wheezy : Debian wheezy + PHP 5.4.32
 - 5.5 : Debian wheezy + PHP 5.5.16
 - *5.6 : Not yet implemented*

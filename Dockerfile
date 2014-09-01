@@ -2,7 +2,7 @@
 # PHP-Dotdeb Dockerfile
 #
 
-FROM debian:wheezy
+FROM debian:squeeze
 MAINTAINER Valentin Andries <valentin.andries@gmail.com>
 
 # Install utils
@@ -13,8 +13,8 @@ RUN \
 # Configure Dotdeb sources
 RUN \
   wget -O - http://www.dotdeb.org/dotdeb.gpg | apt-key add - && \
-  echo "deb http://packages.dotdeb.org wheezy all" > /etc/apt/sources.list.d/dotdeb.list && \
-  echo "\ndeb-src http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list.d/dotdeb.list && \
+  echo "deb http://packages.dotdeb.org squeeze-php54 all" > /etc/apt/sources.list.d/dotdeb.list && \
+  echo "\ndeb-src http://packages.dotdeb.org squeeze-php54 all" >> /etc/apt/sources.list.d/dotdeb.list && \
   apt-get update
 
 # Install PHP
